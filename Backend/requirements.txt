@@ -1,12 +1,15 @@
 fastapi
 uvicorn[standard]
 websockets
-opencv-python-headless
-tensorflow-cpu
+opencv-python-headless>=4.5.0,<4.9.0
+tensorflow-cpu>=2.8.0,<2.16.0
 mtcnn
 fer
-numpy
+numpy>=1.21.0,<1.26.0
 python-multipart
 moviepy==1.0.3
 motor
 python-dotenv
+
+# Note: If you need GUI support (cv2.imshow), use opencv-python instead of opencv-python-headless
+# The NumPy compatibility issue is resolved by using numpy<1.26.0 with compatible TensorFlow/OpenCV versions

@@ -12,7 +12,7 @@ function ReportModal({ showReport, sessionReport, setShowReport, getScoreColor, 
         <div>{showReport && sessionReport && (
             <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50">
                 <div className="bg-white rounded-2xl border border-purple-200/50 shadow-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden">
-                    <div className="flex items-center justify-between p-6 border-b border-purple-200/50">
+                    <div className="flex items-center justify-between px-6 py-2 border-b border-purple-200/50">
                         <h2 className="text-2xl font-bold text-gray-800 flex items-center">
                             <FileText className="mr-3 text-purple-600 w-6 h-6" />
                             Proctoring Report
